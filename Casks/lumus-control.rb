@@ -1,20 +1,14 @@
 cask "lumus-control" do
   version "0.3.0"
+  sha256 :no_check  # el workflow pondrá el SHA real en el próximo release
 
-  on_arm do
-    url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
-        verified: "github.com/dotfn/lumus-control/"
-    sha256 :no_check
-  end
-  on_intel do
-    url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_x86_64.dmg",
-        verified: "github.com/dotfn/lumus-control/"
-    sha256 :no_check
-  end
-
+  url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
+      verified: "github.com/dotfn/lumus-control/"
   name "Lumus Control"
-  desc "Desktop control application for Lumus devices"
-  homepage "https://github.com/dotfn/lumus-control"
+  desc "Panel local para controlar lámparas WiZ via UDP"
+  homepage "https://lumus-control.vercel.app"
+
+  depends_on arch: :arm64
 
   livecheck do
     url :url
