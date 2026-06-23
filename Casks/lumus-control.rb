@@ -1,5 +1,5 @@
 cask "lumus-control" do
-  version "0.2.0"
+  version "0.3.0"
 
   on_arm do
     url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
