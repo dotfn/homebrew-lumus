@@ -1,6 +1,6 @@
 cask "lumus-control" do
-  version "0.3.0"
-  sha256 :no_check  # el workflow pondrá el SHA real en el próximo release
+  version "0.3.8"
+  sha256 "f235fd758312490a842f815961d8175c7dc76a606742a990937ccd98c8dd1016"
 
   url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
       verified: "github.com/dotfn/lumus-control/"
