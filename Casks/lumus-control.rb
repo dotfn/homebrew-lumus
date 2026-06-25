@@ -1,6 +1,6 @@
 cask "lumus-control" do
   version "0.3.9"
-  sha256 "17941c064987c87c93aed6de85b77b117e98547121cb5882d31e0378eda2ef66"
+  sha256 "f45ed43f19bc55b26bd3146886a8457fe07b40f1653ec09cc18e428ac5c01e96"
 
   url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
       verified: "github.com/dotfn/lumus-control/"
@@ -15,10 +15,10 @@ cask "lumus-control" do
     strategy :github_latest
   end
 
-  app "lumus-control.app"
+  app "Lumus Control.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/lumus-control.app"]
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Lumus Control.app"]
   end
 end
