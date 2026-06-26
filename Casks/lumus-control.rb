@@ -1,6 +1,6 @@
 cask "lumus-control" do
-  version "0.3.9"
-  sha256 "db7e6f55407763fc6e1542d1ea9ae69972a64dfa90b94232c212edbb07171a63"
+  version "0.3.10"
+  sha256 "9957aac2fa2ff9d3f8da24d2d8d63375c2b6b5440bc04604c300a92693f05cab"
 
   url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
       verified: "github.com/dotfn/lumus-control/"
