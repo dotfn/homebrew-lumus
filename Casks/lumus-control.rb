@@ -1,6 +1,6 @@
 cask "lumus-control" do
-  version "0.5.1"
-  sha256 "61f36de119b7f3956c306f863d1c642802c334019a1154a2796fc1db3f7b8f13"
+  version "0.5.2"
+  sha256 "21277c96221f50b9fa7079118571b5a89c01e0771ab9cc9a0620eca53842c06d"
 
   url "https://github.com/dotfn/lumus-control/releases/download/v#{version}/lumus-control_#{version}_aarch64.dmg",
       verified: "github.com/dotfn/lumus-control/"
@@ -8,7 +8,7 @@ cask "lumus-control" do
   desc "Local control panel for WiZ smart lamps over UDP"
   homepage "https://lumus-control.vercel.app"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
   depends_on arch: :arm64
 
   livecheck do
